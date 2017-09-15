@@ -111,6 +111,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\auto.c" />
+    <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\dfa.c" />
     <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\IntSet.c" />
     <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\IntSet_test.c" />
     <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\LinkedList.c" />

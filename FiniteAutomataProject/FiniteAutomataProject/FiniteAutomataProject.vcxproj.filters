@@ -33,6 +33,9 @@
     <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\strdup.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\dfa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\LinkedList.h">

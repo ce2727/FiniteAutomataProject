@@ -18,6 +18,8 @@
  * only provide a partial declaration in the header file.
  */
 typedef struct DFA *DFA;
+typedef struct DFAState *DFAState;
+
 
 /**
  * Allocate and return a new DFA containing the given number of states.
