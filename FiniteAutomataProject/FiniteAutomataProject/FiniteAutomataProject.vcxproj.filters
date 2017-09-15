@@ -18,5 +18,43 @@
     <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\auto.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\IntSet.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\IntSet_test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\LinkedList.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\LinkedList_test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\strdup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\LinkedList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\dfa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\IntSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\nfa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\strdup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\auto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\Makefile" />
   </ItemGroup>
 </Project>

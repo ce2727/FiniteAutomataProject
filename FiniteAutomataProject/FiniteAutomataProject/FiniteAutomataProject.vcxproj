@@ -111,6 +111,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\auto.c" />
+    <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\IntSet.c" />
+    <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\IntSet_test.c" />
+    <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\LinkedList.c" />
+    <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\LinkedList_test.c" />
+    <ClCompile Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\strdup.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\auto.h" />
+    <ClInclude Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\dfa.h" />
+    <ClInclude Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\IntSet.h" />
+    <ClInclude Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\LinkedList.h" />
+    <ClInclude Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\nfa.h" />
+    <ClInclude Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\strdup.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Clay%27sLaptop\source\repos\FiniteAutomataProject\FiniteAutomataProject\FiniteAutomataProject\Makefile" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
