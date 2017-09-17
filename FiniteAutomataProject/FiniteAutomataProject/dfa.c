@@ -39,7 +39,7 @@ DFA* initialize_DFA(int numStates) {
 		printf("Does it die here? ");
 		d->stateArray[i].accepts = FALSE;//Each state is initialized to not accepting upon creation
 		for (int j = 0; j < ASCII_Chars; j++) {//For each position in the array
-			printf("Filler");
+			
 			d->stateArray[i].transitions[j] = NoTransition; //Set it to have no transitions
 		}
 	}
