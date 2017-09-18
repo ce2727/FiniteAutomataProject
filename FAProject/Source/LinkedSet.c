@@ -1,12 +1,11 @@
 /*
-Modified from George Ferguson's "LinkedList.c"
-Acts as a linkedlist style set for int
+Based off of Geroge Furgeson's included LinkedList file
+Adopts the functionality of a set, yet unlike his IntSet
+system, it allows for pointers of the systems to be made
 */
 
 #include <stdio.h>
 #include <stdlib.h>
-//#include "LinkedSet.h"
-
 
 typedef struct LinkedSetNode {
     int data;
@@ -106,98 +105,3 @@ void LinkedSet_print_list(LinkedSet *list) {
        }
     printf("\n");
 }
-
-//
-// /**
-//  * Remove the given void* value from the given LinkedSet if it is there.
-//  * Note that this does not free the data associated with the element.
-//  */
-// void
-// LinkedSet_remove(LinkedSet *list, int data) {
-//     for (LinkedSetNode *node=list->first; node != NULL; node=node->next) {
-// 	if (node->data == data) {
-// 	    if (node == list->first) {
-// 		list->first = node->next;
-// 	    }
-// 	    if (node == list->last) {
-// 		list->last = node->prev;
-// 	    }
-// 	    if (node->prev != NULL) {
-// 		node->prev->next = node->next;
-// 	    }
-// 	    if (node->next != NULL) {
-// 		node->next->prev = node->prev;
-// 	    }
-// 	    free(node);
-// 	    return;
-// 	}
-//     }
-// }
-//
-// /**
-//  * Remove and return the first element from the given LinkedSet.
-//  * Returns NULL if the list is empty.
-//  */
-// void *
-// LinkedSet_pop(LinkedSet *list) {
-//     void *data = LinkedSet_element_at(list, 0);
-//     if (data != NULL) {
-// 	LinkedSet_remove(list, data); // Removes first occurrence
-//     }
-//     return data;
-// }
-//
-// /**
-//  * Call the given function on each element of given LinkedSet, passing the
-//  * void* value to the function.
-//  */
-// void
-// LinkedSet_iterate(const LinkedSet *list, void (*func)(void *)) {
-//     for (LinkedSetNode *node=list->first; node != NULL; node=node->next) {
-// 	func(node->data);
-//     }
-// }
-//
-// /**
-//  * Return an LinkedSetIterator for the given LinkedSet.
-//  * Don't forget to free() this when you're done iterating.
-//  */
-// LinkedSetIterator *
-// LinkedSet_iterator(const LinkedSet *list) {
-//     LinkedSetIterator *iterator = (LinkedSetIterator*)malloc(sizeof(LinkedSetIterator));
-//     *iterator = list->first;
-//     return iterator;
-// }
-//
-// /**
-//  * Return true if the given LinkedSetIterator will return another element
-//  * if LinkedSetIterator_next() is called.
-//  */
-// bool
-// LinkedSetIterator_has_next(const LinkedSetIterator *iterator) {
-//     return iterator != NULL && *iterator != NULL;
-// }
-//
-// /**
-//  * Return the next value from the given LinkedSetIterator and increment it
-//  * to point to the next element.
-//  * Will return NULL if there is no such element.
-//  * This means that you can't store NULL in a LinkedSet. C'est la vie.
-//  * It would be easy to allow it and signal `no such element' some other way...
-//  */
-// void *
-// LinkedSetIterator_next(LinkedSetIterator *iterator) {
-//     if (iterator == NULL || *iterator == NULL) {
-// 	return NULL;
-//     } else {
-// 	void *data = (*iterator)->data;
-// 	*iterator = (*iterator)->next;
-// 	return data;
-//     }
-// }
-//
-// /**
-//  * Print the given LinkedSet to stdout, assuming that the values are
-//  * all null-terminated strings.
-//  */
-// void

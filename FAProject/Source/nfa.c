@@ -226,7 +226,7 @@ int main(){
   NFA_setLambdaTransition(n3,-1,2,2);
   NFA_set_accepting(n3,2);
 
-  if (NFA_accepts_string(n3,"11001",5)) {
+  if (NFA_accepts_string(n3,"1100",5)) {
       printf("n3 Works\n");
   } else {
     printf("n3 Doesn't work...\n");
