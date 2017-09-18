@@ -39,12 +39,12 @@ DFA* initialize_DFA(int numStates) {
 
 void DFA_set_transition(DFA* dfa, int stateNumber, char inputChar, int destination)
 {
-    dfa->state_array[stateNumber].transitions[inputChar]=destination;//Passing in char to array index translates it to ascii value
+    dfa->state_array[stateNumber].transitions[(int)inputChar]=destination;//Passing in char to array index translates it to ascii value
 }
 
 int DFA_get_transition(DFA* dfa, int stateNumber, char inputChar)
 {
-    return dfa->state_array[stateNumber].transitions[inputChar];
+    return dfa->state_array[stateNumber].transitions[(int)inputChar];
 }
 
 void DFA_set_accepting(DFA* dfa, int stateNumber)
