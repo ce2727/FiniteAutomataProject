@@ -1,10 +1,5 @@
-/*
-Based off of Geroge Furgeson's included LinkedList file
-Adopts the functionality of a set, yet unlike his IntSet
-system, it allows for pointers of the systems to be made
-*/
-
 #include "LinkedSet.h"
+
 inline int LinkedSet_contains(LinkedSet *list, int data) {
   for (LinkedSetNode *node=list->first; node != NULL; node=node->next) {
 	   if (node->data == data) {
@@ -17,7 +12,6 @@ inline int LinkedSet_contains(LinkedSet *list, int data) {
 /**
  * Allocate, initialize and return a new (empty) LinkedSet.
  */
- //!!ADDED INLINE HERE BECAUSE OF STATIC REMOVE IN .C FILE!!
 inline LinkedSet* LinkedSet_new() {
     LinkedSet *list = (LinkedSet*)malloc(sizeof(LinkedSet));
     list->first = list->last = NULL;

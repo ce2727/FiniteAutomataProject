@@ -46,9 +46,11 @@ inline void DFA_set_accepting(DFA* dfa, int stateNumber)
 /*(DEBUG)
 *Prints the state array
 */
-inline void print_state_array(DFA_State *array, int len)
+inline void print_state_array(DFA *dfa)
 {
-  for (int i=0;i < len; i++) {
+	int length = dfa->states;
+	DFA_State* array = (dfa->state_array);
+  for (int i=0;i < length; i++) {
     printf("State Number: %d\n", array[i].stateNumber);
   }
 }

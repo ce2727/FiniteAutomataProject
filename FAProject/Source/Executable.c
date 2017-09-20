@@ -1,51 +1,42 @@
 #include "Executable.h"
 
-int main(){
-  NFA* n1 = initialize_NFA(4);
-  NFA_set_transition(n1,0,'m',1);
-  NFA_set_transition(n1,1,'a',2);
-  NFA_set_transition(n1,2,'n',3);
-  NFA_setLambdaTransition(n1,-1,0,0);
-  NFA_set_accepting(n1,3);
+  int main(){
 
-  if (NFA_accepts_string(n1,"man",3)) {
-      printf("NFA Works\n");
-  } else {
-    printf("NFA Doesn't work...\n");
-  }
 
-  DFA* converted = Convert(n1);
-  if (DFA_accepts_string(converted,"man",3)) {
-      printf("DFA WORKS! YOU DID IT!\n");
-  } else {
-    printf("DFA Doesn't work, almost there!\n");
-  }
-}
+    /**
+    *Deterministic Finite Automata
+    */
 
-/*int main(){
+    //Exactly the string 'ab'
+    // a).
     printf("Automaton testing for string 'ab'\n");
 
-    //Part 1
-    //Each required dfa will be created below
-    //with the suffix as the question label
-    // a).
     DFA* dfa_a = initialize_DFA(3);
     DFA_set_transition(dfa_a, 0, 'a',1);
     DFA_set_transition(dfa_a, 1, 'b',2);
     DFA_set_accepting(dfa_a, 2);
 
-    char TString[] = {'a','b','b'};
-    int exeInt = DFA_accepts_string(dfa_a,TString,3);
-    printf("%d (1 Accepts, 0 Declined)\n", exeInt);
+    char TStringa[] = {'a','b'};
+    int exeInta = DFA_accepts_string(dfa_a,TStringa,2);
+    printf("%d (1 Accepts, 0 Declined)\n", exeInta);
 
+    //Any string starting with ab
     // b).
+    printf("Automaton testing for any string starting with sub-string 'ab'\n");
+
     DFA* dfa_b = initialize_DFA(3);
     DFA_set_transition(dfa_b, 0, 'a',1);
     DFA_set_transition(dfa_b, 1, 'b',2);
     DFA_set_Lambda_Transition(dfa_b,2,2);
     DFA_set_accepting(dfa_b, 2);
 
-        // c).
+    char TStringb[] = {'a','b'};
+    int exeIntb = DFA_accepts_string(dfa_b,TStringb,2);
+    printf("%d (1 Accepts, 0 Declined)\n", exeIntb);
+
+    //Binary input with even number of 1's
+    printf("Automaton testing for even  # of 1's \n");
+
     DFA* dfa_c = initialize_DFA(2);
     DFA_set_transition(dfa_c, 0, '1',1);
     DFA_set_transition(dfa_c, 0, '0',0);
@@ -53,7 +44,13 @@ int main(){
     DFA_set_transition(dfa_c, 1, '0',1);
     DFA_set_accepting(dfa_c, 0);
 
-            // d).
+    char TStringc[] = {'1','1'};
+    int exeIntc = DFA_accepts_string(dfa_c,TStringc,2);
+    printf("%d (1 Accepts, 0 Declined)\n", exeIntc);
+
+    //Binary with even 0's and 1's
+    printf("Automaton testing for even # of 1's and 0's\n");
+
     DFA* dfa_d = initialize_DFA(4);
     DFA_set_transition(dfa_d, 0, '0',1);
     DFA_set_transition(dfa_d, 1, '0',0);
@@ -69,8 +66,9 @@ int main(){
     int exeIntd = DFA_accepts_string(dfa_d,TStringd,8);
     printf("%d (1 Accepts, 0 Declined)\n", exeIntd);
 
-    // e). It asked us for an interesting pattern,
-    //so my pattern is exactly the string 'interesting'
+    //Exactly the string 'interesting'
+
+    printf("Automaton testing for string 'interesting'\n");
     DFA* dfa_e = initialize_DFA(12);
     DFA_set_transition(dfa_e, 0, 'i',1);
     DFA_set_transition(dfa_e, 1, 'n',2);
@@ -89,15 +87,13 @@ int main(){
     int exeInte = DFA_accepts_string(dfa_e,TStringe,11);
     printf("%d (1 Accepts, 0 Declined)\n", exeInte);
 
-  }*/
+    /**
+    *Non-Deterministic Finite Automata
+    */
 
-  /**
-  *Temp - create and run NFA
-  */
-    //n1 accepts the pattern of strings ending in "man"
+    //Strings with more than one a, g, h, i, o, s, t, or w, or more than two n’s
+    printf("Automaton testing for strings with more than one a, g, h, i, o, s, t, or w, or more than two n's\n");
 
-    //n2 accepts the pattern of strings with more than one a, g, h, i, o, s, t, or w, or more than two n’s
-  /*
     NFA* n2 = initialize_NFA(20);
     NFA_set_accepting(n2,2);
     NFA_set_accepting(n2,4);
@@ -137,6 +133,10 @@ int main(){
       printf("n2 Doesn't work\n");
     }
 
+    /*
+    *Random example nfa
+    */
+
     NFA* n3 = initialize_NFA(4);
     NFA_set_transition(n3,0,'0',1);
     NFA_set_transition(n3,1,'0',2);
@@ -146,9 +146,9 @@ int main(){
     NFA_setLambdaTransition(n3,-1,2,2);
     NFA_set_accepting(n3,2);
 
-    if (NFA_accepts_string(n3,"1100",5)) {
+    if (NFA_accepts_string(n3,"1100",4)) {
         printf("n3 Works\n");
     } else {
       printf("n3 Doesn't work...\n");
     }
-    */
+}
